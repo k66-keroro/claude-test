@@ -1,0 +1,191 @@
+{
+  `path`: `old_Materials`,
+  `repo`: `claude-test`,
+  `owner`: `k66-keroro`
+}
+レスポンス
+
+Error executing code: MCP error -32603: Not Found: Resource not found: Not Found
+
+
+{
+  `path`: `.`,
+  `repo`: `claude-test`,
+  `owner`: `k66-keroro`
+}
+
+[
+  {
+    "type": "file",
+    "size": 1741,
+    "name": "PROGRESS.md",
+    "path": "PROGRESS.md",
+    "sha": "03b70d7925b86c4c4200fd1705f255f43b845772",
+    "url": "https://api.github.com/repos/k66-keroro/claude-test/contents/PROGRESS.md?ref=main",
+    "git_url": "https://api.github.com/repos/k66-keroro/claude-test/git/blobs/03b70d7925b86c4c4200fd1705f255f43b845772",
+    "html_url": "https://github.com/k66-keroro/claude-test/blob/main/PROGRESS.md",
+    "download_url": "https://raw.githubusercontent.com/k66-keroro/claude-test/main/PROGRESS.md"
+  },
+  {
+    "type": "file",
+    "size": 39,
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "f4fee787417004ff1340e133c6f94cd7e895b76a",
+    "url": "https://api.github.com/repos/k66-keroro/claude-test/contents/README.md?ref=main",
+    "git_url": "https://api.github.com/repos/k66-keroro/claude-test/git/blobs/f4fee787417004ff1340e133c6f94cd7e895b76a",
+    "html_url": "https://github.com/k66-keroro/claude-test/blob/main/README.md",
+    "download_url": "https://raw.githubusercontent.com/k66-keroro/claude-test/main/README.md"
+  },
+  {
+    "type": "file",
+    "size": 3205,
+    "name": "SPECIFICATION.md",
+    "path": "SPECIFICATION.md",
+    "sha": "e5eff85efe7c181b7665eee0b0ee8968d75d5dc5",
+    "url": "https://api.github.com/repos/k66-keroro/claude-test/contents/SPECIFICATION.md?ref=main",
+    "git_url": "https://api.github.com/repos/k66-keroro/claude-test/git/blobs/e5eff85efe7c181b7665eee0b0ee8968d75d5dc5",
+    "html_url": "https://github.com/k66-keroro/claude-test/blob/main/SPECIFICATION.md",
+    "download_url": "https://raw.githubusercontent.com/k66-keroro/claude-test/main/SPECIFICATION.md"
+  },
+  {
+    "type": "dir",
+    "size": 0,
+    "name": "docs",
+    "path": "docs",
+    "sha": "e22c47582df95e8d325d91fcbe5b6017efb8a56c",
+    "url": "https://api.github.com/repos/k66-keroro/claude-test/contents/docs?ref=main",
+    "git_url": "https://api.github.com/repos/k66-keroro/claude-test/git/trees/e22c47582df95e8d325d91fcbe5b6017efb8a56c",
+    "html_url": "https://github.com/k66-keroro/claude-test/tree/main/docs",
+    "download_url": null
+  },
+  {
+    "type": "file",
+    "size": 11,
+    "name": "test.txt",
+    "path": "test.txt",
+    "sha": "5e1c309dae7f45e0f39b1bf3ac3cd9db12e7d689",
+    "url": "https://api.github.com/repos/k66-keroro/claude-test/contents/test.txt?ref=main",
+    "git_url": "https://api.github.com/repos/k66-keroro/claude-test/git/blobs/5e1c309dae7f45e0f39b1bf3ac3cd9db12e7d689",
+    "html_url": "https://github.com/k66-keroro/claude-test/blob/main/test.txt",
+    "download_url": "https://raw.githubusercontent.com/k66-keroro/claude-test/main/test.txt"
+  }
+]
+
+{
+  `path`: `docs`,
+  `repo`: `claude-test`,
+  `owner`: `k66-keroro`
+}
+
+[
+  {
+    "type": "file",
+    "size": 2292,
+    "name": "PROJECT_STRUCTURE.md",
+    "path": "docs/PROJECT_STRUCTURE.md",
+    "sha": "76d19f4bf4bedb965b98cec177b4791457bea14d",
+    "url": "https://api.github.com/repos/k66-keroro/claude-test/contents/docs/PROJECT_STRUCTURE.md?ref=main",
+    "git_url": "https://api.github.com/repos/k66-keroro/claude-test/git/blobs/76d19f4bf4bedb965b98cec177b4791457bea14d",
+    "html_url": "https://github.com/k66-keroro/claude-test/blob/main/docs/PROJECT_STRUCTURE.md",
+    "download_url": "https://raw.githubusercontent.com/k66-keroro/claude-test/main/docs/PROJECT_STRUCTURE.md"
+  },
+  {
+    "type": "dir",
+    "size": 0,
+    "name": "old_Materials",
+    "path": "docs/old_Materials",
+    "sha": "d0e11f4c1e92fb35e888be1c923ac2907d378de0",
+    "url": "https://api.github.com/repos/k66-keroro/claude-test/contents/docs/old_Materials?ref=main",
+    "git_url": "https://api.github.com/repos/k66-keroro/claude-test/git/trees/d0e11f4c1e92fb35e888be1c923ac2907d378de0",
+    "html_url": "https://github.com/k66-keroro/claude-test/tree/main/docs/old_Materials",
+    "download_url": null
+  }
+]
+
+{
+  `path`: `docs/old_Materials`,
+  `repo`: `claude-test`,
+  `owner`: `k66-keroro`
+}
+
+{
+  `path`: `docs/PROJECT_STRUCTURE.md`,
+  `repo`: `claude-test`,
+  `owner`: `k66-keroro`
+}
+
+
+{
+  "name": "PROJECT_STRUCTURE.md",
+  "path": "docs/PROJECT_STRUCTURE.md",
+  "sha": "76d19f4bf4bedb965b98cec177b4791457bea14d",
+  "size": 2292,
+  "url": "https://api.github.com/repos/k66-keroro/claude-test/contents/docs/PROJECT_STRUCTURE.md?ref=main",
+  "html_url": "https://github.com/k66-keroro/claude-test/blob/main/docs/PROJECT_STRUCTURE.md",
+  "git_url": "https://api.github.com/repos/k66-keroro/claude-test/git/blobs/76d19f4bf4bedb965b98cec177b4791457bea14d",
+  "download_url": "https://raw.githubusercontent.com/k66-keroro/claude-test/main/docs/PROJECT_STRUCTURE.md",
+  "type": "file",
+  "content": "# 毎日のデータ更新処理刷新プロジェクト\n\n## プロジェクト概要\n毎日のデータ更新処理を効率化・自動化するPython配布ツールの開発\n\n## 📁 推奨ディレクトリ構造\n```\ndaily-data-update-tool/\n├── README.md                 # プロジェクト概要・使用方法\n├── SPECIFICATION.md          # 詳細仕様書\n├── PROGRESS.md              # 進捗管理・開発ログ\n├── INSTALLATION.md          # インストール・セットアップ手順\n├── docs/                    # 詳細ドキュメント\n│   ├── api-reference.md     # API仕様\n│   ├── user-guide.md        # ユーザーガイド\n│   └── developer-guide.md   # 開発者向けガイド\n├── src/                     # ソースコード\n│   ├── __init__.py\n│   ├── main.py             # メインエントリーポイント\n│   ├── data_processor.py   # データ処理ロジック\n│   ├── config/             # 設定ファイル\n│   └── utils/              # ユーティリティ\n├── tests/                  # テストコード\n│   ├── __init__.py\n│   ├── test_main.py\n│   └── test_data_processor.py\n├── requirements.txt        # 依存関係\n├── setup.py               # パッケージ設定\n├── .gitignore            # Git除外ファイル\n└── LICENSE               # ライセンス\n```\n\n## 📋 作成する文書の役割\n\n### 1. README.md\n- プロジェクトの概要\n- 主な機能\n- クイックスタートガイド\n- 基本的な使用例\n\n### 2. SPECIFICATION.md\n- 詳細な機能仕様\n- データフロー図\n- システム要件\n- 制約事項\n\n### 3. PROGRESS.md\n- 開発進捗の記録\n- マイルストーン\n- TODO リスト\n- 完了済みタスク\n- 今後の計画\n\n### 4. INSTALLATION.md\n- 環境要件\n- インストール手順\n- 初期設定方法\n- トラブルシューティング\n\n## 🎯 次のステップ\n1. 既存のmdファイルの内容確認\n2. 適切なカテゴリーへの分類\n3. GitHubリポジトリへのアップロード\n4. 継続的な更新体制の構築\n\n---\n\n**作成日**: 2025年6月23日\n**更新予定**: 既存資料確認後に具体的な内容で更新",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/k66-keroro/claude-test/contents/docs/PROJECT_STRUCTURE.md?ref=main",
+    "git": "https://api.github.com/repos/k66-keroro/claude-test/git/blobs/76d19f4bf4bedb965b98cec177b4791457bea14d",
+    "html": "https://github.com/k66-keroro/claude-test/blob/main/docs/PROJECT_STRUCTURE.md"
+  }
+}
+
+
+old_Materialsフォルダの主要なファイルを確認します。
+
+{
+  `path`: `docs/old_Materials/001_決定(ΦωΦ).md`,
+  `repo`: `claude-test`,
+  `owner`: `k66-keroro`
+}
+
+{
+  "name": "001_決定(ΦωΦ).md",
+  "path": "docs/old_Materials/001_決定(ΦωΦ).md",
+  "sha": "48324f4b5ebeefc67ecd6abe5a432e05fcaf1e7e",
+  "size": 1004,
+  "url": "https://api.github.com/repos/k66-keroro/claude-test/contents/docs/old_Materials/001_%E6%B1%BA%E5%AE%9A(%CE%A6%CF%89%CE%A6).md?ref=main",
+  "html_url": "https://github.com/k66-keroro/claude-test/blob/main/docs/old_Materials/001_%E6%B1%BA%E5%AE%9A(%CE%A6%CF%89%CE%A6).md",
+  "git_url": "https://api.github.com/repos/k66-keroro/claude-test/git/blobs/48324f4b5ebeefc67ecd6abe5a432e05fcaf1e7e",
+  "download_url": "https://raw.githubusercontent.com/k66-keroro/claude-test/main/docs/old_Materials/001_決定(ΦωΦ).md",
+  "type": "file",
+  "content": "`C:\\Projects_workspace\\03_unified_system\\\n├── config/                 # 設定ファイル\n│   ├── constants.py        # パス・定数管理\n│   ├── database_config.py  # DB接続設定\n│   └── file_mapping.yaml   # ファイル-テーブル対応\n├── src/                    # ソースコード\n│   ├── core/              # コア機能\n│   │   ├── sqlite_manager.py\n│   │   ├── file_processor.py\n│   │   └── access_exporter.py\n│   ├── processors/        # データ処理\n│   │   ├── sap_processors/\n│   │   └── transform_rules/\n│   └── dashboard/         # ダッシュボード\n├── data/                  # データディレクトリ\n│   ├── raw/              # 生データ（SAP出力）\n│   ├── sqlite/           # SQLiteDB\n│   └── access/           # Access配布用\n├── logs/                 # ログ\n└── tests/                # テスト`",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/k66-keroro/claude-test/contents/docs/old_Materials/001_%E6%B1%BA%E5%AE%9A(%CE%A6%CF%89%CE%A6).md?ref=main",
+    "git": "https://api.github.com/repos/k66-keroro/claude-test/git/blobs/48324f4b5ebeefc67ecd6abe5a432e05fcaf1e7e",
+    "html": "https://github.com/k66-keroro/claude-test/blob/main/docs/old_Materials/001_%E6%B1%BA%E5%AE%9A(%CE%A6%CF%89%CE%A6).md"
+  }
+}
+
+{
+  `path`: `docs/old_Materials/20250620_計画2_py.md`,
+  `repo`: `claude-test`,
+  `owner`: `k66-keroro`
+}
+
+{
+  "name": "20250620_計画2_py.md",
+  "path": "docs/old_Materials/20250620_計画2_py.md",
+  "sha": "4b16af5d3176f9c49833b0805f1e633c1e98a03d",
+  "size": 15910,
+  "url": "https://api.github.com/repos/k66-keroro/claude-test/contents/docs/old_Materials/20250620_%E8%A8%88%E7%94%BB2_py.md?ref=main",
+  "html_url": "https://github.com/k66-keroro/claude-test/blob/main/docs/old_Materials/20250620_%E8%A8%88%E7%94%BB2_py.md",
+  "git_url": "https://api.github.com/repos/k66-keroro/claude-test/git/blobs/4b16af5d3176f9c49833b0805f1e633c1e98a03d",
+  "download_url": "https://raw.githubusercontent.com/k66-keroro/claude-test/main/docs/old_Materials/20250620_計画2_py.md",
+  "type": "file",
+  "content": "# config/constants.py\nfrom pathlib import Path\nfrom dataclasses import dataclass\nfrom typing import Dict, List\n\n@dataclass\nclass Paths:\n    \"\"\"パス定数管理\"\"\"\n    PROJECT_ROOT: Path = Path(r\"C:\\Projects_workspace\\03_unified_system\")\n    RAW_DATA: Path = PROJECT_ROOT / \"data\" / \"raw\"\n    SQLITE_DB: Path = PROJECT_ROOT / \"data\" / \"sqlite\" / \"main.db\"\n    ACCESS_OUTPUT: Path = PROJECT_ROOT / \"data\" / \"access\"\n    LOGS: Path = PROJECT_ROOT / \"logs\"\n    \n    def __post_init__(self):\n        \"\"\"ディレクトリ作成\"\"\"\n        for path in [self.RAW_DATA, self.SQLITE_DB.parent, self.ACCESS_OUTPUT, self.LOGS]:\n            path.mkdir(parents=True, exist_ok=True)\n\n@dataclass \nclass FilePatterns:\n    \"\"\"ファイルパターン定義\"\"\"\n    SAP_FILES: Dict[str, str] = None\n    \n    def __post_init__(self):\n        self.SAP_FILES = {\n            \"PLM\": \"GetPLMItmPlntInfo_*.txt\",\n            \"WBS\": \"GetSekkeiWBSJisseki.txt\", \n            \"BOM\": \"MARA_DL.csv\",\n            \"SEISAN\": \"PP_DL_CSV_SEISAN_YOTEI.csv\",\n            \"ZAIKO\": \"dbo_提出用_経理_滞留在庫資料_通常.xlsx\"\n        }\n\n@dataclass\nclass ProcessConfig:\n    \"\"\"処理設定\"\"\"\n    CHUNK_SIZE: int = 50000\n    MAX_WORKERS: int = 4\n    TIMEOUT_SECONDS: int = 300\n    ENCODING_LIST: List[str] = None\n    \n    def __post_init__(self):\n        self.ENCODING_LIST = ['utf-8', 'shift_jis', 'cp932', 'iso-2022-jp']\n\n# =============================================================================\n# src/core/sqlite_manager.py\nimport sqlite3\nimport pandas as pd\nimport logging\nfrom pathlib import Path\nfrom typing import Optional, List, Dict, Any\nfrom concurrent.futures import ThreadPoolExecutor\nimport time\n\nclass SQLiteManager:\n    \"\"\"SQLite統一管理クラス\"\"\"\n    \n    def __init__(self, db_path: Path):\n        self.db_path = db_path\n        self.logger = self._setup_logger()\n        self._init_database()\n    \n    def _setup_logger(self) -> logging.Logger:\n        \"\"\"ログ設定\"\"\"\n        logger = logging.getLogger(self.__class__.__name__)\n        if not logger.handlers:\n            handler = logging.FileHandler(\n                Paths().LOGS / f\"{self.__class__.__name__}.log\",\n                encoding='utf-8'\n            )\n            formatter = logging.Formatter(\n                '%(asctime)s - %(name)s - %(levelname)s - %(message)s'\n            )\n            handler.setFormatter(formatter)\n            logger.addHandler(handler)\n            logger.setLevel(logging.INFO)\n        return logger\n    \n    def _init_database(self):\n        \"\"\"データベース初期化\"\"\"\n        with sqlite3.connect(self.db_path) as conn:\n            # 性能向上設定\n            conn.execute(\"PRAGMA journal_mode = WAL\")\n            conn.execute(\"PRAGMA synchronous = NORMAL\") \n            conn.execute(\"PRAGMA cache_size = 10000\")\n            conn.execute(\"PRAGMA temp_store = memory\")\n    \n    def bulk_insert_from_csv(self, file_path: Path, table_name: str, \n                           chunk_size: int = 50000, encoding: str = 'utf-8') -> bool:\n        \"\"\"CSV大容量一括挿入\"\"\"\n        start_time = time.time()\n        self.logger.info(f\"開始: {table_name} <- {file_path.name}\")\n        \n        try:\n            # エンコーディング自動判定\n            if encoding == 'auto':\n                encoding = self._detect_encoding(file_path)\n            \n            with sqlite3.connect(self.db_path) as conn:\n                # テーブル削除・作成\n                conn.execute(f\"DROP TABLE IF EXISTS {table_name}\")\n                \n                total_rows = 0\n                for i, chunk in enumerate(pd.read_csv(file_path, \n                                                   chunksize=chunk_size,\n                                                   encoding=encoding,\n                                                   low_memory=False)):\n                    \n                    # 初回はテーブル作成\n                    if_exists = 'replace' if i == 0 else 'append'\n                    \n                    # データ型最適化\n                    chunk = self._optimize_dtypes(chunk)\n                    \n                    chunk.to_sql(table_name, conn, \n                               if_exists=if_exists, \n                               index=False, \n                               method='multi')\n                    \n                    total_rows += len(chunk)\n                    self.logger.info(f\"  処理中: {total_rows:,} rows\")\n                \n                # インデックス作成\n                self._create_indexes(conn, table_name, chunk.columns)\n                \n            elapsed = time.time() - start_time\n            self.logger.info(f\"完了: {table_name} ({total_rows:,} rows, {elapsed:.1f}s)\")\n            return True\n            \n        except Exception as e:\n            self.logger.error(f\"エラー: {table_name} - {str(e)}\")\n            return False\n    \n    def _detect_encoding(self, file_path: Path) -> str:\n        \"\"\"エンコーディング自動判定\"\"\"\n        import chardet\n        \n        with open(file_path, 'rb') as f:\n            raw_data = f.read(100000)  # 100KB読み取り\n            result = chardet.detect(raw_data)\n            encoding = result['encoding']\n            confidence = result['confidence']\n            \n        self.logger.info(f\"エンコーディング判定: {encoding} (信頼度: {confidence:.2f})\")\n        return encoding if confidence > 0.7 else 'shift_jis'\n    \n    def _optimize_dtypes(self, df: pd.DataFrame) -> pd.DataFrame:\n        \"\"\"データ型最適化\"\"\"\n        for col in df.columns:\n            if df[col].dtype == 'object':\n                # 数値変換試行\n                try:\n                    # まず整数変換\n                    if df[col].str.match(r'^-?\\d+$').all():\n                        df[col] = pd.to_numeric(df[col], downcast='integer')\n                    # 次に浮動小数点\n                    elif df[col].str.match(r'^-?\\d*\\.?\\d+$').all():\n                        df[col] = pd.to_numeric(df[col], downcast='float')\n                except:\n                    pass\n            elif df[col].dtype in ['int64', 'float64']:\n                df[col] = pd.to_numeric(df[col], downcast='integer' if 'int' in str(df[col].dtype) else 'float')\n        \n        return df\n    \n    def _create_indexes(self, conn: sqlite3.Connection, table_name: str, columns: List[str]):\n        \"\"\"インデックス作成\"\"\"\n        # 主要カラムの推定とインデックス作成\n        key_patterns = ['id', 'code', 'key', 'no', '番号', 'コード']\n        \n        for col in columns:\n            col_lower = col.lower()\n            if any(pattern in col_lower for pattern in key_patterns):\n                try:\n                    idx_name = f\"idx_{table_name}_{col.replace(' ', '_')}\"\n                    conn.execute(f\"CREATE INDEX IF NOT EXISTS {idx_name} ON {table_name} ({col})\")\n                    self.logger.info(f\"  インデックス作成: {idx_name}\")\n                except Exception as e:\n                    self.logger.warning(f\"  インデックス作成失敗: {col} - {str(e)}\")\n    \n    def export_to_access_format(self, table_name: str, output_path: Path) -> bool:\n        \"\"\"Access互換形式でエクスポート\"\"\"\n        try:\n            with sqlite3.connect(self.db_path) as conn:\n                df = pd.read_sql_query(f\"SELECT * FROM {table_name}\", conn)\n                \n                # Access互換データ型変換\n                for col in df.columns:\n                    if df[col].dtype == 'object':\n                        # 文字列は255文字制限\n                        df[col] = df[col].astype(str).str[:255]\n                    elif 'datetime' in str(df[col].dtype):\n                        # 日付形式統一\n                        df[col] = pd.to_datetime(df[col], errors='coerce')\n                \n                # CSV出力（Access取り込み用）\n                df.to_csv(output_path, index=False, encoding='shift_jis')\n                self.logger.info(f\"Access用エクスポート完了: {output_path}\")\n                return True\n                \n        except Exception as e:\n            self.logger.error(f\"エクスポートエラー: {str(e)}\")\n            return False\n    \n    def get_table_info(self, table_name: str) -> Dict[str, Any]:\n        \"\"\"テーブル情報取得\"\"\"\n        with sqlite3.connect(self.db_path) as conn:\n            cursor = conn.cursor()\n            \n            # 行数\n            cursor.execute(f\"SELECT COUNT(*) FROM {table_name}\")\n            row_count = cursor.fetchone()[0]\n            \n            # カラム情報\n            cursor.execute(f\"PRAGMA table_info({table_name})\")\n            columns = cursor.fetchall()\n            \n            # サイズ情報\n            cursor.execute(f\"SELECT page_count * page_size as size FROM pragma_page_count(), pragma_page_size()\")\n            db_size = cursor.fetchone()[0]\n            \n            return {\n                'row_count': row_count,\n                'columns': columns,\n                'db_size_mb': db_size / 1024 / 1024\n            }\n\n# =============================================================================\n# src/core/file_processor.py\nfrom concurrent.futures import ThreadPoolExecutor, as_completed\nimport glob\nfrom typing import List, Tuple\n\nclass FileProcessor:\n    \"\"\"ファイル処理統合クラス\"\"\"\n    \n    def __init__(self):\n        self.paths = Paths()\n        self.config = ProcessConfig()\n        self.sqlite_mgr = SQLiteManager(self.paths.SQLITE_DB)\n        self.logger = self._setup_logger()\n    \n    def _setup_logger(self) -> logging.Logger:\n        logger = logging.getLogger(self.__class__.__name__)\n        if not logger.handlers:\n            handler = logging.FileHandler(\n                self.paths.LOGS / f\"{self.__class__.__name__}.log\",\n                encoding='utf-8'\n            )\n            formatter = logging.Formatter(\n                '%(asctime)s - %(name)s - %(levelname)s - %(message)s'\n            )\n            handler.setFormatter(formatter)\n            logger.addHandler(handler)\n            logger.setLevel(logging.INFO)\n        return logger\n    \n    def process_all_files(self) -> Dict[str, bool]:\n        \"\"\"全ファイル一括処理\"\"\"\n        start_time = time.time()\n        self.logger.info(\"=== ファイル一括処理開始 ===\")\n        \n        # 処理対象ファイル取得\n        file_tasks = self._get_file_tasks()\n        results = {}\n        \n        # 並行処理実行\n        with ThreadPoolExecutor(max_workers=self.config.MAX_WORKERS) as executor:\n            future_to_task = {\n                executor.submit(self._process_single_file, task): task \n                for task in file_tasks\n            }\n            \n            for future in as_completed(future_to_task):\n                task = future_to_task[future]\n                try:\n                    result = future.result(timeout=self.config.TIMEOUT_SECONDS)\n                    results[task['table_name']] = result\n                except Exception as e:\n                    self.logger.error(f\"ファイル処理エラー: {task['file_path']} - {str(e)}\")\n                    results[task['table_name']] = False\n        \n        # 結果集計\n        success_count = sum(results.values())\n        total_count = len(results)\n        elapsed = time.time() - start_time\n        \n        self.logger.info(f\"=== 処理完了: {success_count}/{total_count} 成功 ({elapsed:.1f}s) ===\")\n        return results\n    \n    def _get_file_tasks(self) -> List[Dict[str, Any]]:\n        \"\"\"処理対象ファイル一覧作成\"\"\"\n        tasks = []\n        patterns = FilePatterns().SAP_FILES\n        \n        for key, pattern in patterns.items():\n            file_paths = list(self.paths.RAW_DATA.glob(pattern))\n            for file_path in file_paths:\n                if file_path.is_file():\n                    tasks.append({\n                        'file_path': file_path,\n                        'table_name': f\"{key}_{file_path.stem}\".lower(),\n                        'type': key\n                    })\n        \n        self.logger.info(f\"処理対象ファイル: {len(tasks)} 件\")\n        return tasks\n    \n    def _process_single_file(self, task: Dict[str, Any]) -> bool:\n        \"\"\"単一ファイル処理\"\"\"\n        file_path = task['file_path']\n        table_name = task['table_name']\n        \n        # ファイル種別別処理\n        if file_path.suffix.lower() == '.csv':\n            return self.sqlite_mgr.bulk_insert_from_csv(\n                file_path, table_name, \n                chunk_size=self.config.CHUNK_SIZE,\n                encoding='auto'\n            )\n        elif file_path.suffix.lower() in ['.txt']:\n            # TXTファイルはCSVとして処理（区切り文字自動判定）\n            return self._process_txt_file(file_path, table_name)\n        elif file_path.suffix.lower() in ['.xlsx', '.xls']:\n            return self._process_excel_file(file_path, table_name)\n        else:\n            self.logger.warning(f\"未対応ファイル形式: {file_path}\")\n            return False\n    \n    def _process_txt_file(self, file_path: Path, table_name: str) -> bool:\n        \"\"\"TXTファイル処理（区切り文字自動判定）\"\"\"\n        try:\n            # 区切り文字判定\n            with open(file_path, 'r', encoding='shift_jis') as f:\n                first_line = f.readline()\n                \n            # 区切り文字候補\n            separators = ['\\t', ',', '|', ' ']\n            best_sep = '\\t'  # デフォルト\n            max_cols = 0\n            \n            for sep in separators:\n                cols = len(first_line.split(sep))\n                if cols > max_cols:\n                    max_cols = cols\n                    best_sep = sep\n            \n            # pandasで読み込み、SQLiteに保存\n            df = pd.read_csv(file_path, sep=best_sep, encoding='shift_jis')\n            \n            with sqlite3.connect(self.sqlite_mgr.db_path) as conn:\n                df.to_sql(table_name, conn, if_exists='replace', index=False)\n            \n            self.logger.info(f\"TXT処理完了: {table_name} ({len(df)} rows)\")\n            return True\n            \n        except Exception as e:\n            self.logger.error(f\"TXT処理エラー: {file_path} - {str(e)}\")\n            return False\n    \n    def _process_excel_file(self, file_path: Path, table_name: str) -> bool:\n        \"\"\"Excelファイル処理\"\"\"\n        try:\n            # 全シート読み込み\n            excel_file = pd.ExcelFile(file_path)\n            \n            with sqlite3.connect(self.sqlite_mgr.db_path) as conn:\n                for sheet_name in excel_file.sheet_names:\n                    df = pd.read_excel(file_path, sheet_name=sheet_name)\n                    sheet_table_name = f\"{table_name}_{sheet_name}\".lower()\n                    df.to_sql(sheet_table_name, conn, if_exists='replace', index=False)\n                    self.logger.info(f\"Excel処理: {sheet_table_name} ({len(df)} rows)\")\n            \n            return True\n            \n        except Exception as e:\n            self.logger.error(f\"Excel処理エラー: {file_path} - {str(e)}\")\n            return False\n\n# =============================================================================\n# メイン実行スクリプト\nif __name__ == \"__main__\":\n    # 設定初期化\n    paths = Paths()\n    \n    # ファイル処理実行\n    processor = FileProcessor()\n    results = processor.process_all_files()\n    \n    # 結果表示\n    print(\"\\n=== 処理結果 ===\")\n    for table, success in results.items():\n        status = \"✅ 成功\" if success else \"❌ 失敗\"\n        print(f\"{table}: {status}\")\n    \n    print(f\"\\n成功率: {sum(results.values())}/{len(results)} ({sum(results.values())/len(results)*100:.1f}%)\")",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/k66-keroro/claude-test/contents/docs/old_Materials/20250620_%E8%A8%88%E7%94%BB2_py.md?ref=main",
+    "git": "https://api.github.com/repos/k66-keroro/claude-test/git/blobs/4b16af5d3176f9c49833b0805f1e633c1e98a03d",
+    "html": "https://github.com/k66-keroro/claude-test/blob/main/docs/old_Materials/20250620_%E8%A8%88%E7%94%BB2_py.md"
+  }
+}
+
+
