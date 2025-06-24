@@ -1,0 +1,208 @@
+# SQLiteデータベース設定ファイル
+# 作成日: 2025年6月24日
+# 目的: データベース接続・性能設定の統一管理
+
+database:
+  # SQLiteファイルの基本設定
+  sqlite:
+    # データベースファイルパス（相対パス）
+    db_path: "data/sqlite/unified_database.db"
+    
+    # バックアップファイルパス
+    backup_path: "data/sqlite/backup/"
+    
+    # 接続設定
+    connection:
+      # タイムアウト設定（秒）
+      timeout: 30
+      
+      # チェックサムとサイズ検証
+      check_same_thread: false
+      
+      # SQLite互換モード
+      isolation_level: null
+
+  # 性能最適化設定
+  performance:
+    # WALモード（Write-Ahead Logging）
+    journal_mode: "WAL"
+    
+    # 同期モード（性能重視）
+    synchronous: "NORMAL"
+    
+    # キャッシュサイズ（KB）
+    cache_size: 10000
+    
+    # メモリマップサイズ（MB）
+    mmap_size: 268435456
+    
+    # 一時ストレージ
+    temp_store: "MEMORY"
+    
+    # ページサイズ（バイト）
+    page_size: 4096
+
+  # チャンク処理設定
+  chunking:
+    # 標準チャンクサイズ
+    default_chunk_size: 50000
+    
+    # 大容量ファイル用チャンクサイズ
+    large_file_chunk_size: 100000
+    
+    # メモリ使用量制限（MB）
+    memory_limit: 512
+
+# ファイル処理設定
+file_processing:
+  # エンコーディング設定
+  encoding:
+    # 試行順序
+    supported_encodings:
+      - "utf-8"
+      - "shift_jis"
+      - "cp932"
+      - "iso-2022-jp"
+      - "euc-jp"
+    
+    # エンコーディング検出設定
+    detection:
+      confidence_threshold: 0.7
+      sample_size: 10240
+
+  # 並行処理設定
+  parallel:
+    # 最大ワーカー数
+    max_workers: 4
+    
+    # タイムアウト（秒）
+    timeout: 300
+    
+    # リトライ回数
+    max_retries: 3
+
+# データ型最適化設定
+data_optimization:
+  # 自動データ型変換
+  auto_convert:
+    # 整数型最適化
+    optimize_integers: true
+    
+    # 浮動小数点最適化
+    optimize_floats: true
+    
+    # 文字列型最適化
+    optimize_strings: true
+    
+    # 日付型自動認識
+    parse_dates: true
+    
+    # カテゴリ型変換閾値
+    category_threshold: 0.5
+
+  # メモリ使用量最適化
+  memory:
+    # 低メモリモード
+    low_memory: true
+    
+    # ダウンキャスト実行
+    downcast: true
+
+# インデックス設定
+indexing:
+  # 自動インデックス作成
+  auto_create: true
+  
+  # インデックス対象カラム
+  auto_index_columns:
+    - "id"
+    - "date"
+    - "code"
+    - "item_code"
+    - "plant_code"
+  
+  # 複合インデックス設定
+  composite_indexes:
+    - columns: ["date", "plant_code"]
+      name: "idx_date_plant"
+    - columns: ["item_code", "plant_code"]
+      name: "idx_item_plant"
+
+# Access互換エクスポート設定
+access_export:
+  # 出力パス
+  output_path: "data/access/"
+  
+  # ファイル名プレフィックス
+  file_prefix: "unified_data_"
+  
+  # 日付フォーマット
+  date_format: "%Y%m%d"
+  
+  # 最大レコード数（Accessの制限対応）
+  max_records_per_file: 2000000
+  
+  # CSV出力設定
+  csv_settings:
+    encoding: "shift_jis"
+    delimiter: ","
+    quoting: 1  # QUOTE_ALL
+    line_terminator: "\r\n"
+
+# ログ設定
+logging:
+  # ログレベル
+  level: "INFO"
+  
+  # ログファイルパス
+  log_path: "logs/"
+  
+  # ログファイル名
+  log_filename: "database_operations.log"
+  
+  # ローテーション設定
+  rotation:
+    max_size: "10MB"
+    backup_count: 5
+  
+  # ログフォーマット
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # 日付フォーマット
+  date_format: "%Y-%m-%d %H:%M:%S"
+
+# エラーハンドリング設定
+error_handling:
+  # リトライ設定
+  retry:
+    max_attempts: 3
+    backoff_factor: 2
+    max_delay: 30
+  
+  # エラー時の動作
+  on_error:
+    # 処理継続
+    continue_on_error: true
+    
+    # エラーログ詳細出力
+    detailed_logging: true
+    
+    # エラーファイル保存
+    save_error_files: true
+    
+    # エラーファイル保存パス
+    error_file_path: "logs/error_files/"
+
+# バックアップ設定
+backup:
+  # 自動バックアップ
+  auto_backup: true
+  
+  # バックアップ間隔（時間）
+  backup_interval: 24
+  
+  # バックアップ保持期間（日）
+  retention_days: 30
+  
+  # 圧縮設定
+  compression: true
