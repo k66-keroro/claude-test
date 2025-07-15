@@ -1,0 +1,22 @@
+# Claude作業ログ
+
+## 現在の状況
+- 日付: 2025-07-15
+- 対応中の問題: OllamaとVSCodeの接続問題
+- 参考URL: https://iwannacreateapps.com/ai/ollama-and-vscode/
+
+## プロジェクト現状
+- データ取り込み処理: 全39ファイルの取り込み完了
+- 設定ファイル: 定数.py、データベース構成.yamlコミット済み
+- ドキュメント: PROGRESS.md、SPECIFICATION.md整備済み
+
+## 接続問題の対応予定
+1. Ollama サーバーの起動状態確認
+2. VSCode拡張機能の設定確認
+3. ポート設定の確認
+4. 設定ファイルの修正
+
+## 次回対応項目
+- Ollama接続エラーの詳細診断
+- VSCodeでの設定方法の確認
+- 必要に応じて設定ファイルの修正
