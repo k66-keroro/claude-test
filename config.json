@@ -1,0 +1,10 @@
+{
+  "models": [
+    {
+      "title": "TinyLlama",
+      "provider": "ollama",
+      "model": "tinyllama:latest",
+      "apiBase": "http://localhost:11434"
+    }
+  ]
+}
