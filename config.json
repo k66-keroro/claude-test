@@ -1,0 +1,28 @@
+{
+  "models": [
+    {
+      "title": "TinyLlama",
+      "provider": "ollama",
+      "model": "tinyllama:latest",
+      "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "Qwen2-0.5B",
+      "provider": "ollama",
+      "model": "qwen2:0.5b",
+      "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "Phi3-Mini",
+      "provider": "ollama",
+      "model": "phi3:3.8b",
+      "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "Gemma2-2B",
+      "provider": "ollama",
+      "model": "gemma2:2b",
+      "apiBase": "http://localhost:11434"
+    }
+  ]
+}
