@@ -5,6 +5,18 @@
       "provider": "ollama",
       "model": "tinyllama:latest",
       "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "Qwen2.5-0.5B",
+      "provider": "ollama",
+      "model": "qwen2.5:0.5b",
+      "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "Phi-3-mini",
+      "provider": "ollama",
+      "model": "phi3:mini",
+      "apiBase": "http://localhost:11434"
     }
   ]
 }
