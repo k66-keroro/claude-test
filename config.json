@@ -7,22 +7,40 @@
       "apiBase": "http://localhost:11434"
     },
     {
-      "title": "Qwen2-0.5B",
+      "title": "Qwen2.5-0.5B",
       "provider": "ollama",
-      "model": "qwen2:0.5b",
+      "model": "qwen2.5:0.5b",
+      "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "Qwen2.5-1.5B",
+      "provider": "ollama",
+      "model": "qwen2.5:1.5b",
       "apiBase": "http://localhost:11434"
     },
     {
       "title": "Phi3-Mini",
       "provider": "ollama",
-      "model": "phi3:3.8b",
+      "model": "phi3:mini",
       "apiBase": "http://localhost:11434"
     },
     {
-      "title": "Gemma2-2B",
+      "title": "Llama3.1-8B",
       "provider": "ollama",
-      "model": "gemma2:2b",
+      "model": "llama3.1:8b",
+      "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "Llama2",
+      "provider": "ollama",
+      "model": "llama2:latest",
       "apiBase": "http://localhost:11434"
     }
-  ]
+  ],
+  "tabAutocompleteModel": {
+    "title": "TinyLlama-Autocomplete",
+    "provider": "ollama",
+    "model": "tinyllama:latest",
+    "apiBase": "http://localhost:11434"
+  }
 }
