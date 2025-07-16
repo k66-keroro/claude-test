@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "title": "Qwen2.5 3B 日本語対応",
+      "provider": "ollama",
+      "model": "qwen2.5:3b",
+      "systemMessage": "あなたは日本語を話すプログラミングアシスタントです。必ず日本語で回答し、コードの説明は初心者にも分かりやすく説明してください。エラーが発生した場合は、原因と解決策を日本語で詳しく説明してください。"
+    },
+    {
+      "title": "Qwen2.5 1.5B 日本語対応",
+      "provider": "ollama",
+      "model": "qwen2.5:1.5b",
+      "systemMessage": "あなたは日本語を話すプログラミングアシスタントです。必ず日本語で回答し、コードにはコメントを日本語で追加してください。技術的な内容も分かりやすく説明してください。"
+    },
+    {
+      "title": "CodeQwen 1.5B 日本語対応",
+      "provider": "ollama",
+      "model": "codeqwen:1.5b",
+      "systemMessage": "あなたは日本語を話すプログラミング専門アシスタントです。コードの説明、エラー解決、機能実装を日本語で分かりやすく説明してください。"
+    },
+    {
+      "title": "TinyLlama (フォールバック)",
+      "provider": "ollama",
+      "model": "tinyllama",
+      "systemMessage": "あなたはプログラミングアシスタントです。可能な限り日本語で回答してください。"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "CodeQwen Autocomplete",
+    "provider": "ollama",
+    "model": "codeqwen:1.5b"
+  },
+  "customCommands": [
+    {
+      "name": "test",
+      "prompt": "選択されたコードに対して包括的な単体テストを作成してください。コードベースの既存のテストフレームワークを使用し、テストのベストプラクティスに従ってください。テストの内容と目的を日本語でコメントしてください。",
+      "description": "選択したコードの単体テストを作成"
+    },
+    {
+      "name": "explain",
+      "prompt": "選択されたコードの動作を日本語で詳しく説明してください。初心者にも分かりやすく、各部分の役割と全体の流れを説明してください。",
+      "description": "コードの動作を日本語で詳しく説明"
+    },
+    {
+      "name": "optimize",
+      "prompt": "選択されたコードを最適化してください。パフォーマンスの改善点、可読性の向上、ベストプラクティスの適用などを日本語で説明しながら改善してください。",
+      "description": "コードの最適化と改善提案"
+    },
+    {
+      "name": "debug",
+      "prompt": "選択されたコードのバグを特定し、修正方法を日本語で説明してください。エラーの原因と対処法を詳しく説明してください。",
+      "description": "バグの特定と修正方法の説明"
+    },
+    {
+      "name": "refactor",
+      "prompt": "選択されたコードをリファクタリングしてください。コードの構造改善、命名の改善、重複の除去などを行い、変更内容を日本語で説明してください。",
+      "description": "コードのリファクタリング"
+    }
+  ],
+  "contextProviders": [
+    {
+      "name": "diff",
+      "params": {}
+    },
+    {
+      "name": "folder",
+      "params": {}
+    },
+    {
+      "name": "codebase",
+      "params": {}
+    },
+    {
+      "name": "terminal",
+      "params": {}
+    }
+  ],
+  "slashCommands": [
+    {
+      "name": "edit",
+      "description": "選択したコードを編集"
+    },
+    {
+      "name": "comment",
+      "description": "選択したコードに日本語コメントを追加"
+    },
+    {
+      "name": "share",
+      "description": "現在のチャットセッションをMarkdownでエクスポート"
+    },
+    {
+      "name": "cmd",
+      "description": "シェルコマンドを生成"
+    }
+  ],
+  "allowAnonymousTelemetry": false,
+  "embeddingsProvider": {
+    "provider": "ollama",
+    "model": "nomic-embed-text",
+    "maxChunkSize": 512
+  },
+  "reranker": {
+    "name": "cohere"
+  }
+}
