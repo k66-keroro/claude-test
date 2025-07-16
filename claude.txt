@@ -2,50 +2,68 @@
 
 ## 現在の状況
 - 日付: 2025-07-16
-- 対応中の問題: Continue拡張機能のメモリ不足エラー解決
-- 設定ファイル: config.json（モデル名修正済み）
+- 対応中の問題: Continue拡張機能のメモリ不足エラー解決（26GB要求エラー）
+- 設定ファイル: continue_config_ultralight.json追加完了
 
 ## プロジェクト現状
 - データ取り込み処理: 全39ファイルの取り込み完了
 - 設定ファイル: 定数.py、データベース構成.yamlコミット済み
 - ドキュメント: PROGRESS.md、SPECIFICATION.md整備済み
-- Continue拡張機能: config.jsonファイル設定修正完了
+- Continue拡張機能: 超軽量設定ファイル追加完了
 
-## 作業完了項目
-1. Continue config.jsonファイルの設定修正
-   - ダウンロード済みモデルに合わせて修正
-   - TinyLlama（最軽量：637MB）
-   - Qwen2.5 0.5B（超軽量：397MB）
-   - Qwen2.5 1.5B（軽量：986MB）
-   - Phi3 Mini（軽量：2.2GB）
-   - Llama3.1 8B（標準：4.9GB）
-   - Llama2（標準：3.8GB）
-   - タブ補完にTinyLlamaを設定
+## 緊急対処完了項目
+1. 超軽量Continue設定ファイルの作成
+   - continue_config_ultralight.json追加
+   - TinyLlama（最軽量：637MB）メイン設定
+   - Qwen2.5 0.5B（超軽量：397MB）サブ設定
+   - タブ補完もTinyLlamaに設定
 
-2. メモリ不足エラー対応
-   - 重いモデルの削除完了
-   - 軽量モデルの設定完了
-   - 最軽量のQwen2.5:0.5b（397MB）を推奨
+2. メモリ不足エラー対応手順
+   - Ollamaメモリ制限設定方法記載
+   - 実行中モデル停止方法記載
+   - 最軽量モデルでの再起動方法記載
 
 ## 解決済み問題
-- メモリ不足エラー: 軽量モデルの選択肢追加により解決
+- メモリ不足エラー: 超軽量モデルの設定追加により対応
 - Continue拡張機能: 複数モデルの設定完了
 - モデル名不一致: 実際のダウンロード済みモデルに合わせて修正
 
-## 次回対応項目
-- VSCodeでのContinue拡張機能の再起動
-- 軽量モデルでの動作確認
-- メモリ使用量の監視と最適化
-- タブ補完機能の動作テスト
+## 即座に実行すべき手順
+1. PowerShellで環境変数設定:
+   ```
+   set OLLAMA_MAX_LOADED_MODELS=1
+   set OLLAMA_NUM_PARALLEL=1
+   ```
+
+2. 実行中モデルを停止:
+   ```
+   ollama stop
+   ollama run tinyllama
+   ```
+
+3. VSCodeでContinue拡張機能を再起動:
+   - Ctrl+Shift+P → "Developer: Reload Window"
+
+4. 設定ファイルを超軽量版に差し替え:
+   - C:\Users\sem3171\.continue\config.json
+   - continue_config_ultralight.jsonの内容をコピー
 
 ## 技術仕様
 - Continue設定: schema v1
 - プロバイダー: Ollama
-- 推奨モデル: Qwen2.5:0.5b（メモリ効率重視）
+- 推奨モデル: TinyLlama（最軽量637MB）
 - 設定ファイル場所: C:\Users\sem3171\.continue\config.json
+- 超軽量設定ファイル: continue_config_ultralight.json
 
 ## 対処方法
-1. VSCodeでContinue拡張機能を再起動
-2. 最軽量のQwen2.5:0.5bモデルを選択
-3. メモリ使用量を監視しながら使用
-4. 必要に応じてより軽量なTinyLlamaに切り替え
+1. 環境変数でOllamaメモリ制限設定
+2. 実行中の重いモデルを停止
+3. 最軽量のTinyLlamaで再起動
+4. VSCodeのContinue拡張機能を再起動
+5. 超軽量設定ファイルに差し替え
+
+## 次回対応項目
+- 軽量モデルでの動作確認
+- メモリ使用量の監視と最適化
+- タブ補完機能の動作テスト
+- 必要に応じてさらなる軽量化対応
