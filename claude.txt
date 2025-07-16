@@ -1,46 +1,51 @@
 # Claude作業ログ
 
 ## 現在の状況
-- 日付: 2025-07-15
-- 対応中の問題: Continue拡張機能の設定確認
-- 設定ファイル: config.json（Local Assistant version 1.0.0）
+- 日付: 2025-07-16
+- 対応中の問題: Continue拡張機能のメモリ不足エラー解決
+- 設定ファイル: config.json（モデル名修正済み）
 
 ## プロジェクト現状
 - データ取り込み処理: 全39ファイルの取り込み完了
 - 設定ファイル: 定数.py、データベース構成.yamlコミット済み
 - ドキュメント: PROGRESS.md、SPECIFICATION.md整備済み
-- Continue拡張機能: config.jsonファイル設定完了
+- Continue拡張機能: config.jsonファイル設定修正完了
 
 ## 作業完了項目
-1. Continue config.jsonファイルの設定確認
-   - Microsoft Phi 3 mini（軽量モデル）
-   - Qwen 2.5 0.5B（超軽量：約0.5GB）
-   - Qwen 2.5 1.5B（軽量：約1.5GB）
-   - Llama3.1 8B（標準：約8GB）
-   - TinyLlama（最軽量）
-   - 各モデルでnum_ctx: 2048、num_predict: 512に設定
+1. Continue config.jsonファイルの設定修正
+   - ダウンロード済みモデルに合わせて修正
+   - TinyLlama（最軽量：637MB）
+   - Qwen2.5 0.5B（超軽量：397MB）
+   - Qwen2.5 1.5B（軽量：986MB）
+   - Phi3 Mini（軽量：2.2GB）
+   - Llama3.1 8B（標準：4.9GB）
+   - Llama2（標準：3.8GB）
+   - タブ補完にTinyLlamaを設定
 
-2. コンテキストプロバイダー設定
-   - code: コードコンテキスト
-   - docs: ドキュメント
-   - diff: 差分
-   - terminal: ターミナル
-   - problems: 問題
-   - folder: フォルダ
-   - codebase: コードベース
+2. メモリ不足エラー対応
+   - 重いモデルの削除完了
+   - 軽量モデルの設定完了
+   - 最軽量のQwen2.5:0.5b（397MB）を推奨
 
 ## 解決済み問題
 - メモリ不足エラー: 軽量モデルの選択肢追加により解決
 - Continue拡張機能: 複数モデルの設定完了
+- モデル名不一致: 実際のダウンロード済みモデルに合わせて修正
 
 ## 次回対応項目
-- Ollamaでの各モデルのダウンロード状況確認
-- VSCodeでのモデル切り替え動作確認
-- Continue拡張機能の実際の動作テスト
+- VSCodeでのContinue拡張機能の再起動
+- 軽量モデルでの動作確認
 - メモリ使用量の監視と最適化
+- タブ補完機能の動作テスト
 
 ## 技術仕様
 - Continue設定: schema v1
 - プロバイダー: Ollama
-- 推奨モデル: Qwen 2.5 0.5B（メモリ効率重視）
+- 推奨モデル: Qwen2.5:0.5b（メモリ効率重視）
 - 設定ファイル場所: C:\Users\sem3171\.continue\config.json
+
+## 対処方法
+1. VSCodeでContinue拡張機能を再起動
+2. 最軽量のQwen2.5:0.5bモデルを選択
+3. メモリ使用量を監視しながら使用
+4. 必要に応じてより軽量なTinyLlamaに切り替え
