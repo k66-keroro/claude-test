@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "title": "Qwen2.5 0.5B (超軽量)",
+      "provider": "ollama",
+      "model": "qwen2.5:0.5b",
+      "systemMessage": "あなたはプログラミングアシスタントです。簡潔で正確な回答を提供してください。"
+    },
+    {
+      "title": "TinyLlama (最軽量)",
+      "provider": "ollama", 
+      "model": "tinyllama",
+      "systemMessage": "あなたはプログラミングアシスタントです。"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "TinyLlama Autocomplete",
+    "provider": "ollama",
+    "model": "tinyllama"
+  },
+  "customCommands": [
+    {
+      "name": "test",
+      "prompt": "Write a comprehensive set of unit tests for the highlighted code. Use the same testing framework as the rest of the codebase and follow testing best practices.",
+      "description": "Write unit tests for highlighted code"
+    }
+  ],
+  "contextProviders": [
+    {
+      "name": "diff",
+      "params": {}
+    },
+    {
+      "name": "folder",
+      "params": {}
+    },
+    {
+      "name": "codebase",
+      "params": {}
+    }
+  ],
+  "slashCommands": [
+    {
+      "name": "edit",
+      "description": "Edit highlighted code"
+    },
+    {
+      "name": "comment",
+      "description": "Write comments for the highlighted code"
+    },
+    {
+      "name": "share",
+      "description": "Export the current chat session to markdown"
+    },
+    {
+      "name": "cmd",
+      "description": "Generate a shell command"
+    }
+  ],
+  "allowAnonymousTelemetry": false,
+  "embeddingsProvider": {
+    "provider": "ollama",
+    "model": "nomic-embed-text",
+    "maxChunkSize": 512
+  }
+}
