@@ -2,16 +2,16 @@
 
 ## 現在の状況
 - 日付: 2025-07-16
-- 問題: Continue拡張機能でPhi 3 miniモデルのメモリ不足エラー → **解決済み**
+- 問題: Continue拡張機能でUnleash Repository接続エラー → **対処法提案済み**
 - 対処結果: 超軽量設定ファイルで正常動作確認済み
-- **NEW**: 日本語対応強化設定ファイル作成完了 ✓
+- **NEW**: ネットワークエラー対処版設定ファイル作成完了 ✓
 
 ## プロジェクト現状
 - データ取り込み処理: 全39ファイルの取り込み完了
 - 設定ファイル: 定数.py、データベース構成.yamlコミット済み
 - ドキュメント: PROGRESS.md、SPECIFICATION.md整備済み
 - Continue拡張機能: 超軽量設定ファイル適用完了 ✓
-- **NEW**: 日本語対応設定ファイル（continue_config_japanese.json）作成完了 ✓
+- **NEW**: ネットワークエラー対処版設定ファイル作成完了 ✓
 
 ## 解決済み項目
 1. **メモリ不足エラー対応完了**
@@ -32,6 +32,13 @@
    - 日本語カスタムコマンドの追加
    - 日本語スラッシュコマンドの設定
 
+## 最新の対処項目
+4. **ネットワークエラー対処完了**
+   - Unleash Repository接続タイムアウトエラー対応
+   - 設定ファイルの最適化（experimental設定追加）
+   - テレメトリー無効化設定
+   - インデックス機能の制御設定
+
 ## 日本語対応の改善内容
 ### 対応モデル
 1. **Qwen2.5 3B** - 最良の日本語対応（4GB）
@@ -51,16 +58,35 @@
 - 初心者にも分かりやすい説明を要求
 - エラー解決時の詳細な説明を要求
 
+## ネットワークエラー対処手順
+### 即座に実行可能な対処法
+1. **設定ファイルの更新**
+   - `continue_config_network_fix.json`を`.continue/config.json`に適用
+   - `experimental`設定でOllamaエンベッディング有効化
+   - テレメトリー無効化
+
+2. **VSCode Continue拡張機能のリセット**
+   - `Ctrl + Shift + P` → `Developer: Reload Window`
+   - または `Continue: Reload Window`
+
+3. **Ollamaサービスの再起動**
+   ```powershell
+   ollama stop
+   Start-Sleep -Seconds 3
+   ollama serve
+   ```
+
+4. **モデルの再起動**
+   ```powershell
+   ollama run qwen2.5:1.5b
+   ```
+
 ## 次回実装予定
 ### 段階的導入手順
-1. **Phase 1**: Qwen2.5 1.5Bモデルのダウンロード
-   ```bash
-   ollama pull qwen2.5:1.5b
-   ```
-2. **Phase 2**: 日本語設定ファイルの適用
-   - `continue_config_japanese.json` を `.continue/config.json` にコピー
-3. **Phase 3**: VSCode再起動と動作確認
-4. **Phase 4**: 日本語応答品質の評価とテスト
+1. **Phase 1**: ネットワークエラー対処版設定の適用
+2. **Phase 2**: Qwen2.5 1.5Bモデルの安定稼働確認
+3. **Phase 3**: 日本語応答品質の評価とテスト
+4. **Phase 4**: 継続的な安定稼働の確認
 
 ### メモリ使用量対応
 - システムメモリに応じたモデル選択
@@ -69,28 +95,35 @@
 - 1-2GB: Qwen2.5 0.5B
 - 1GB未満: TinyLlama
 
-## 技術仕様（更新版）
+## 技術仕様（最新版）
 - Continue設定: schema v1
 - プロバイダー: Ollama
 - 主要モデル: Qwen2.5 1.5B（日本語対応）
 - フォールバック: TinyLlama（最軽量637MB）
 - 設定ファイル場所: C:\Users\sem3171\.continue\config.json
-- 日本語対応設定: continue_config_japanese.json
+- 最新設定: continue_config_network_fix.json（ネットワークエラー対処版）
 
 ## 緊急時対処手順（確立済み）
-1. PowerShellで環境変数設定:
-   ```
+1. **Ollamaサービスの制御**
+   ```powershell
    set OLLAMA_MAX_LOADED_MODELS=1
    set OLLAMA_NUM_PARALLEL=1
-   ```
-2. 実行中モデルを停止:
-   ```
    ollama stop
+   ollama serve
+   ```
+
+2. **モデルの再起動**
+   ```powershell
    ollama run qwen2.5:1.5b
    ```
-3. VSCodeでContinue拡張機能を再起動:
-   - Ctrl+Shift+P → "Developer: Reload Window"
-4. 日本語設定ファイルを適用
+
+3. **VSCode Continue拡張機能の再起動**
+   - `Ctrl+Shift+P` → `Developer: Reload Window`
+
+4. **ネットワークエラー専用対処**
+   - 最新のネットワーク対処版設定ファイルを適用
+   - テレメトリー無効化設定の確認
+   - experimental設定の有効化
 
 ## 日本語対応のベストプラクティス
 1. **質問の仕方**
@@ -114,3 +147,4 @@
 - 適切なモデル選択（TinyLlama → Qwen2.5）
 - 設定ファイルの最適化
 - 日本語対応の体系的な強化
+- **NEW**: ネットワークエラーの体系的な対処法確立
